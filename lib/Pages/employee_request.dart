@@ -6,6 +6,7 @@ import '../config/size_config.dart';
 import '../data.dart';
 import '../style/colors.dart';
 import '../style/style.dart';
+import 'emp_detail.dart';
 
 class employeeRequest extends StatelessWidget {
   GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
@@ -18,21 +19,21 @@ class employeeRequest extends StatelessWidget {
       drawer: SizedBox(width: 100, child: SideMenu()),
       appBar: !Responsive.isDesktop(context)
           ? AppBar(
-        elevation: 0,
-        backgroundColor: AppColors.white,
-        leading: IconButton(
-            onPressed: () {
-              _drawerKey.currentState.openDrawer();
-            },
-            icon: Icon(Icons.menu, color: AppColors.black)),
-        actions: [
-          AppBarActionItems(),
-        ],
-      )
+              elevation: 0,
+              backgroundColor: AppColors.white,
+              leading: IconButton(
+                  onPressed: () {
+                    _drawerKey.currentState.openDrawer();
+                  },
+                  icon: Icon(Icons.menu, color: AppColors.black)),
+              actions: [
+                AppBarActionItems(),
+              ],
+            )
           : PreferredSize(
-        preferredSize: Size.zero,
-        child: SizedBox(),
-      ),
+              preferredSize: Size.zero,
+              child: SizedBox(),
+            ),
       body: SafeArea(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,7 +59,7 @@ class employeeRequest extends StatelessWidget {
                                 children: [
                                   PrimaryText(
                                       text: 'Our Employee',
-                                      size:28,
+                                      size: 28,
                                       fontWeight: FontWeight.w800),
                                 ]),
                           ),
@@ -72,16 +73,16 @@ class employeeRequest extends StatelessWidget {
                                   filled: true,
                                   fillColor: AppColors.white,
                                   contentPadding:
-                                  EdgeInsets.only(left: 40.0, right: 5),
+                                      EdgeInsets.only(left: 40.0, right: 5),
                                   enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30),
                                     borderSide:
-                                    BorderSide(color: AppColors.white),
+                                        BorderSide(color: AppColors.white),
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30),
                                     borderSide:
-                                    BorderSide(color: AppColors.white),
+                                        BorderSide(color: AppColors.white),
                                   ),
                                   prefixIcon: Icon(Icons.search,
                                       color: AppColors.black),
@@ -108,12 +109,11 @@ class employeeRequest extends StatelessWidget {
                                     : SizeConfig.screenWidth,
                                 child: Table(
                                   defaultVerticalAlignment:
-                                  TableCellVerticalAlignment.middle,
+                                      TableCellVerticalAlignment.middle,
                                   children: [
                                     TableRow(
                                       decoration: BoxDecoration(
-                                        borderRadius:
-                                        BorderRadius.circular(10),
+                                        borderRadius: BorderRadius.circular(10),
                                       ),
                                       children: [
                                         Container(
@@ -122,7 +122,7 @@ class employeeRequest extends StatelessWidget {
                                               top: 10.0,
                                               bottom: 10.0,
                                               left: 20.0),
-                                          child:  PrimaryText(
+                                          child: PrimaryText(
                                             text: "Profile",
                                             size: 16,
                                             fontWeight: FontWeight.w400,
@@ -165,26 +165,29 @@ class employeeRequest extends StatelessWidget {
                                           fontWeight: FontWeight.w400,
                                           color: AppColors.secondary,
                                         ),
+                                        PrimaryText(
+                                          text: "Action",
+                                          size: 16,
+                                          fontWeight: FontWeight.w400,
+                                          color: AppColors.secondary,
+                                        ),
                                       ],
                                     ),
                                   ],
                                 ),
-
                               ),
-
                               SizedBox(
                                 width: Responsive.isDesktop(context)
                                     ? double.infinity
                                     : SizeConfig.screenWidth,
                                 child: Table(
                                   defaultVerticalAlignment:
-                                  TableCellVerticalAlignment.middle,
+                                      TableCellVerticalAlignment.middle,
                                   children: List.generate(
                                     EmployeeHistory.length,
-                                        (index) => TableRow(
+                                    (index) => TableRow(
                                       decoration: BoxDecoration(
-                                        borderRadius:
-                                        BorderRadius.circular(10),
+                                        borderRadius: BorderRadius.circular(10),
                                       ),
                                       children: [
                                         Container(
@@ -197,59 +200,62 @@ class employeeRequest extends StatelessWidget {
                                             radius: 17,
                                             backgroundImage: NetworkImage(
                                                 EmployeeHistory[index]
-                                                ["avatar"]),
+                                                    ["avatar"]),
                                           ),
                                         ),
                                         PrimaryText(
-                                          text: EmployeeHistory[index]
-                                          ["title"],
+                                          text: EmployeeHistory[index]["title"],
+                                          size: 16,
+                                          fontWeight: FontWeight.w400,
+                                          color: AppColors.secondary,
+                                        ),
+                                        PrimaryText(
+                                          text: EmployeeHistory[index]["email"],
+                                          size: 16,
+                                          fontWeight: FontWeight.w400,
+                                          color: AppColors.secondary,
+                                        ),
+                                        PrimaryText(
+                                          text: EmployeeHistory[index]["phone"],
                                           size: 16,
                                           fontWeight: FontWeight.w400,
                                           color: AppColors.secondary,
                                         ),
                                         PrimaryText(
                                           text: EmployeeHistory[index]
-                                          ["email"],
+                                              ["Gender"],
                                           size: 16,
                                           fontWeight: FontWeight.w400,
                                           color: AppColors.secondary,
                                         ),
                                         PrimaryText(
                                           text: EmployeeHistory[index]
-                                          ["phone"],
+                                              ["service"],
                                           size: 16,
                                           fontWeight: FontWeight.w400,
                                           color: AppColors.secondary,
                                         ),
                                         PrimaryText(
                                           text: EmployeeHistory[index]
-                                          ["Gender"],
+                                              ["joinedOn"],
                                           size: 16,
                                           fontWeight: FontWeight.w400,
                                           color: AppColors.secondary,
                                         ),
-                                        PrimaryText(
-                                          text: EmployeeHistory[index]
-                                          ["service"],
-                                          size: 16,
-                                          fontWeight: FontWeight.w400,
-                                          color: AppColors.secondary,
-                                        ),
-                                        PrimaryText(
-                                          text: EmployeeHistory[index]
-                                          ["joinedOn"],
-                                          size: 16,
-                                          fontWeight: FontWeight.w400,
-                                          color: AppColors.secondary,
-                                        ),
-
+                                        ElevatedButton(
+                                            onPressed: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => employeeDetail()),
+                                              );
+                                            },
+                                            child: Text(EmployeeHistory[index]
+                                                ["action"]))
                                       ],
                                     ),
                                   ),
-
                                 ),
                               ),
-
                             ],
                           ),
                         ),
@@ -260,7 +266,6 @@ class employeeRequest extends StatelessWidget {
           ],
         ),
       ),
-
     );
   }
 }

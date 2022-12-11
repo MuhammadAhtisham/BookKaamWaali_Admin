@@ -66,7 +66,8 @@ const EmployeeHistory = [
     "email": "john@gmail.com",
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
-    "service": "Driver"
+    "service": "Driver",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -76,6 +77,7 @@ const EmployeeHistory = [
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
     "service": "House Maid",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -85,6 +87,7 @@ const EmployeeHistory = [
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
     "service": "Security Guard",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -93,7 +96,8 @@ const EmployeeHistory = [
     "email": "john@gmail.com",
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
-    "service": "Swipper"
+    "service": "Swipper",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -102,7 +106,8 @@ const EmployeeHistory = [
     "email": "john@gmail.com",
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
-    "service": "Driver"
+    "service": "Driver",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -112,6 +117,7 @@ const EmployeeHistory = [
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
     "service": "House Maid",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -121,6 +127,7 @@ const EmployeeHistory = [
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
     "service": "Security Guard",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -129,7 +136,8 @@ const EmployeeHistory = [
     "email": "john@gmail.com",
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
-    "service": "Swipper"
+    "service": "Swipper",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -138,7 +146,8 @@ const EmployeeHistory = [
     "email": "john@gmail.com",
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
-    "service": "Driver"
+    "service": "Driver",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -148,6 +157,7 @@ const EmployeeHistory = [
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
     "service": "House Maid",
+  "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -157,6 +167,7 @@ const EmployeeHistory = [
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
     "service": "Security Guard",
+    "action":"Detail"
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
@@ -165,7 +176,8 @@ const EmployeeHistory = [
     "email": "john@gmail.com",
     "Gender":"Male",
     "joinedOn":"Oct 10,2022",
-    "service": "Swipper"
+    "service": "Swipper",
+    "action":"Detail"
   },
 ];
 
@@ -177,7 +189,7 @@ const orderList = [
     "email": "john@gmail.com",
     "service":"Driver",
     "joinedOn":"Oct 10,2022",
-    "Action": "Completed"
+    "Action": "Completed",
   },
   {
     "avatar": 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',

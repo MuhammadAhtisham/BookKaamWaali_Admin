@@ -72,7 +72,7 @@ class Dashboard extends StatelessWidget {
                             alignment: WrapAlignment.spaceBetween,
                             children: [
                               InfoCard(
-                                  icon:'assets/images/bank.svg',
+                                  icon:'assets/icons/person-oultine.svg',
                                   label: 'Our Employees',
                                   amount: '12',
                               onPressed: (){
@@ -83,7 +83,7 @@ class Dashboard extends StatelessWidget {
                               },
                               ),
                               InfoCard(
-                                  icon: 'assets/images/bank.svg',
+                                  icon: 'assets/icons/person-circle-outline.svg',
                                   label: 'Our Clients',
                                   amount: '19',
                               onPressed: (){
@@ -94,7 +94,7 @@ class Dashboard extends StatelessWidget {
                               },
                               ),
                               InfoCard(
-                                  icon: 'assets/images/bank.svg',
+                                  icon: 'assets/icons/support.png',
                                   label: 'Our Services',
                                   amount: '31',
                               onPressed: (){
@@ -105,7 +105,7 @@ class Dashboard extends StatelessWidget {
                               },
                               ),
                               InfoCard(
-                                  icon: 'assets/images/bank.svg',
+                                  icon: 'assets/icons/bank.svg',
                                   label: 'Total Order',
                                   amount: '10',
                               onPressed: (){

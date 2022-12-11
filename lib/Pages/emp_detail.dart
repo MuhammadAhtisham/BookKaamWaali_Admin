@@ -11,26 +11,31 @@ class _employeeDetailState extends State<employeeDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        Row(
-          children: [
-            Image.asset(
-              'assets/images/man.jpeg',
-              height: 200.0,
-            ),
-            Card(
-              child: Text(
-                'Employee Info',
-                style: TextStyle(
-                  fontSize: 30.0,
-                  color: Colors.purpleAccent,
+        body:SafeArea(
+          child:  SingleChildScrollView(
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Image.asset(
+                      'assets/images/121.jpg',
+                      height: 200.0,
+                    ),
+                    Card(
+                      child: Text(
+                        'Employee Info',
+                        style: TextStyle(
+                          fontSize: 30.0,
+                          color: Colors.purpleAccent,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
-      ],
-    ));
+          ),
+        )
+    );
   }
 }

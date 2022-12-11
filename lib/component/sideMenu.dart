@@ -36,7 +36,7 @@ class SideMenu extends StatelessWidget {
                 child: SizedBox(
                   width: 35,
                   height: 20,
-                  child: SvgPicture.asset('assets/mac-action.svg'),
+                  child: SvgPicture.asset('assets/icons/mac-action.svg'),
                 ),
               ),
               IconButton(
