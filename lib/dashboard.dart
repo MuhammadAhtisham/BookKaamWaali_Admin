@@ -129,15 +129,12 @@ class Dashboard extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 PrimaryText(
-                                  text: 'Balance',
+                                  text: 'Working Progress',
                                   size: 16,
                                   fontWeight: FontWeight.w400,
                                   color: AppColors.secondary,
                                 ),
-                                PrimaryText(
-                                    text: '\$1500',
-                                    size: 30,
-                                    fontWeight: FontWeight.w800),
+
                               ],
                             ),
                             PrimaryText(

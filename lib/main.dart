@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/dashboard.dart';
 import 'package:responsive_dashboard/style/colors.dart';
 import 'Pages/home.dart';
+import 'credentials/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,12 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'BookKaamWaali',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: AppColors.primaryBg
       ),
-      home: Dashboard(),
+      home: loginScreen(),
     );
   }
 }
